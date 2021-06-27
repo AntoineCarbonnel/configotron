@@ -29,8 +29,8 @@ export default StyleSheet.create({
     marginLeft: 10,
     marginVertical: 30,
     color: "#000",
-    fontSize: 20,
-    fontFamily: "Rubik-regular",
+    fontSize: 30,
+    fontFamily: "Rubik-SemiBold",
   },
   container: {
     height: '70%',

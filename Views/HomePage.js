@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Container, Header, Title } from "native-base"
-import { Image, Text, View } from "react-native"
-import styles from "../assets/style/mainStyle"
+import { Image, Text, TouchableOpacity, View } from "react-native"
+import styles from "../assets/style/HomePageStyle"
 import TextRubik from "./components/TextRubik"
 
 export class HomePage extends Component {
@@ -24,11 +24,13 @@ export class HomePage extends Component {
               <TextRubik style={styles.cardText}>
                 Processeur
               </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
+              <TouchableOpacity  onPress={() => this.props.navigation.push('ProductsList')}>
+                <View style={styles.cardAdd}>
+                  <TextRubik style={styles.cardAddText}>
+                    +
+                  </TextRubik>
+                </View>
+              </TouchableOpacity>
             </View>
             <View style={styles.card}>
               <Image style={styles.cardPic} source={require("../assets/img/ventirad.png")} />
