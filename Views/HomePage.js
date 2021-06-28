@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import { Container, Header, Title } from "native-base"
-import { Image, Text, TouchableOpacity, View } from "react-native"
+import { Image, View } from "react-native"
 import styles from "../assets/style/HomePageStyle"
 import TextRubik from "./components/TextRubik"
+import Item from "./components/Item"
 
 export class HomePage extends Component {
   render() {
@@ -19,85 +20,27 @@ export class HomePage extends Component {
             COMPOSANTS
           </TextRubik>
           <View style={styles.container}>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/cpu.png")} />
-              <TextRubik style={styles.cardText}>
-                Processeur
-              </TextRubik>
-              <TouchableOpacity  onPress={() => this.props.navigation.push('ProductsList')}>
-                <View style={styles.cardAdd}>
-                  <TextRubik style={styles.cardAddText}>
-                    +
-                  </TextRubik>
-                </View>
-              </TouchableOpacity>
-            </View>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/ventirad.png")} />
-              <TextRubik style={styles.cardText}>
-                Refroidissement
-              </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
-            </View>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/motherboard.png")} />
-              <TextRubik style={styles.cardText}>
-                Carte mère
-              </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
-            </View>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/ram.png")} />
-              <TextRubik style={styles.cardText}>
-                Mémoire vive
-              </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
-            </View>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/gpu.png")} />
-              <TextRubik style={styles.cardText}>
-                Carte Graphique
-              </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
-            </View>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/stockage.png")} />
-              <TextRubik style={styles.cardText}>
-                Stockage
-              </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
-            </View>
-            <View style={styles.card}>
-              <Image style={styles.cardPic} source={require("../assets/img/case.png")} />
-              <TextRubik style={styles.cardText}>
-                Boîtier
-              </TextRubik>
-              <View style={styles.cardAdd}>
-                <TextRubik style={styles.cardAddText}>
-                  +
-                </TextRubik>
-              </View>
-            </View>
+            <Item navigation={this.props.navigation} img={require("../assets/img/cpu.png")} type={"cpu"}>
+              Processeur
+            </Item>
+            <Item navigation={this.props.navigation} img={require("../assets/img/ventirad.png")} type={"cooling"}>
+              Refroidissement
+            </Item>
+            <Item navigation={this.props.navigation} img={require("../assets/img/motherboard.png")} type={"cm"}>
+              Carte mère
+            </Item>
+            <Item navigation={this.props.navigation} img={require("../assets/img/ram.png")} type={"ram"}>
+              Mémoire vive
+            </Item>
+            <Item navigation={this.props.navigation} img={require("../assets/img/gpu.png")} type={"gpu"}>
+              Carte Graphique
+            </Item>
+            <Item navigation={this.props.navigation} img={require("../assets/img/stockage.png")} type={"stockage"}>
+              Stockage
+            </Item>
+            <Item navigation={this.props.navigation} img={require("../assets/img/case.png")} type={"case"}>
+              Boîtier
+            </Item>
           </View>
         </View>
       </Container>
