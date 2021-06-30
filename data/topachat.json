@@ -1,0 +1,623 @@
+{
+  "cpu": [
+    {
+      "name": "Intel i9",
+      "long_name": "Intel i9 8600-k",
+      "brand": "Intel",
+      "provider": "Topachat",
+      "release_date": "20-10-2019",
+      "options": {
+        "chipset": "X18"
+      },
+      "price": 349
+    },
+    {
+      "name": "Intel i9",
+      "long_name": "Intel i9 8600-k",
+      "brand": "Intel",
+      "provider": "Topachat",
+      "release_date": "20-10-2019",
+      "options": {
+        "chipset": "X18"
+      },
+      "price": 349
+    },
+    {
+      "name": "Intel i9",
+      "long_name": "Intel i9 8600-k",
+      "brand": "Intel",
+      "provider": "Topachat",
+      "release_date": "20-10-2019",
+      "options": {
+        "chipset": "X18"
+      },
+      "price": 349
+    },
+    {
+      "name": "Intel i9",
+      "long_name": "Intel i9 8600-k",
+      "brand": "Intel",
+      "provider": "Topachat",
+      "release_date": "20-10-2019",
+      "options": {
+        "chipset": "X18"
+      },
+      "price": 349
+    },
+    {
+      "name": "Intel i9",
+      "long_name": "Intel i9 8600-k",
+      "brand": "Intel",
+      "provider": "Topachat",
+      "release_date": "20-10-2019",
+      "options": {
+        "chipset": "X18"
+      },
+      "price": 349
+    },
+    {
+      "name": "Intel i9",
+      "long_name": "Intel i9 8600-k",
+      "brand": "Intel",
+      "provider": "Topachat",
+      "release_date": "20-10-2019",
+      "options": {
+        "chipset": "X18"
+      },
+      "price": 349
+    }
+  ],
+  "gpu": [
+    {
+      "name": "RTX 3080",
+      "long_name": "Gigabyte GeForce RTX 3080 VISION OC 10G",
+      "brand": "Gigabyte",
+      "provider": "Topachat",
+      "release_date": "20-10-2020",
+      "options": {
+        "PCIe": " 4.0 x16",
+        "VRAM": 10
+      },
+      "price": 799
+    },
+    {
+      "name": "RTX 3080",
+      "long_name": "Gigabyte GeForce RTX 3080 VISION OC 10G",
+      "brand": "Gigabyte",
+      "provider": "Topachat",
+      "release_date": "20-10-2020",
+      "options": {
+        "PCIe": " 4.0 x16",
+        "VRAM": 10
+      },
+      "price": 799
+    },
+    {
+      "name": "RTX 3080",
+      "long_name": "Gigabyte GeForce RTX 3080 VISION OC 10G",
+      "brand": "Gigabyte",
+      "provider": "Topachat",
+      "release_date": "20-10-2020",
+      "options": {
+        "PCIe": " 4.0 x16",
+        "VRAM": 10
+      },
+      "price": 799
+    },
+    {
+      "name": "RTX 3080",
+      "long_name": "Gigabyte GeForce RTX 3080 VISION OC 10G",
+      "brand": "Gigabyte",
+      "provider": "Topachat",
+      "release_date": "20-10-2020",
+      "options": {
+        "PCIe": " 4.0 x16",
+        "VRAM": 10
+      },
+      "price": 799
+    },
+    {
+      "name": "RTX 3080",
+      "long_name": "Gigabyte GeForce RTX 3080 VISION OC 10G",
+      "brand": "Gigabyte",
+      "provider": "Topachat",
+      "release_date": "20-10-2020",
+      "options": {
+        "PCIe": " 4.0 x16",
+        "VRAM": 10
+      },
+      "price": 799
+    }
+  ],
+  "cooling": [
+    {
+      "name": "Dark Rock 4",
+      "long_name": "Be Quiet! Dark Rock 4",
+      "brand": "Be Quiet!",
+      "provider": "Topachat",
+      "release_date": "01-02-2018",
+      "options": {
+        "TDP": 200,
+        "type": "air"
+      },
+      "compatibility": [
+        "AMD AM2",
+        "AMD AM2+",
+        "AMD AM3",
+        "AMD AM3+",
+        "AMD AM4",
+        "AMD FM1",
+        "AMD FM2",
+        "Intel 1150",
+        "Intel 1151",
+        "Intel 1155",
+        "Intel 1156",
+        "Intel 1200",
+        "Intel 1366",
+        "Intel 2011",
+        "Intel 2011-v3",
+        "Intel 2066"
+      ],
+      "price": 39
+    },
+    {
+      "name": "Dark Rock 4",
+      "long_name": "Be Quiet! Dark Rock 4",
+      "brand": "Be Quiet!",
+      "provider": "Topachat",
+      "release_date": "01-02-2018",
+      "options": {
+        "TDP": 200,
+        "type": "air"
+      },
+      "compatibility": [
+        "AMD AM2",
+        "AMD AM2+",
+        "AMD AM3",
+        "AMD AM3+",
+        "AMD AM4",
+        "AMD FM1",
+        "AMD FM2",
+        "Intel 1150",
+        "Intel 1151",
+        "Intel 1155",
+        "Intel 1156",
+        "Intel 1200",
+        "Intel 1366",
+        "Intel 2011",
+        "Intel 2011-v3",
+        "Intel 2066"
+      ],
+      "price": 39
+    },
+    {
+      "name": "Dark Rock 4",
+      "long_name": "Be Quiet! Dark Rock 4",
+      "brand": "Be Quiet!",
+      "provider": "Topachat",
+      "release_date": "01-02-2018",
+      "options": {
+        "TDP": 200,
+        "type": "air"
+      },
+      "compatibility": [
+        "AMD AM2",
+        "AMD AM2+",
+        "AMD AM3",
+        "AMD AM3+",
+        "AMD AM4",
+        "AMD FM1",
+        "AMD FM2",
+        "Intel 1150",
+        "Intel 1151",
+        "Intel 1155",
+        "Intel 1156",
+        "Intel 1200",
+        "Intel 1366",
+        "Intel 2011",
+        "Intel 2011-v3",
+        "Intel 2066"
+      ],
+      "price": 39
+    },
+    {
+      "name": "Dark Rock 4",
+      "long_name": "Be Quiet! Dark Rock 4",
+      "brand": "Be Quiet!",
+      "provider": "Topachat",
+      "release_date": "01-02-2018",
+      "options": {
+        "TDP": 200,
+        "type": "air"
+      },
+      "compatibility": [
+        "AMD AM2",
+        "AMD AM2+",
+        "AMD AM3",
+        "AMD AM3+",
+        "AMD AM4",
+        "AMD FM1",
+        "AMD FM2",
+        "Intel 1150",
+        "Intel 1151",
+        "Intel 1155",
+        "Intel 1156",
+        "Intel 1200",
+        "Intel 1366",
+        "Intel 2011",
+        "Intel 2011-v3",
+        "Intel 2066"
+      ],
+      "price": 39
+    },
+    {
+      "name": "Dark Rock 4",
+      "long_name": "Be Quiet! Dark Rock 4",
+      "brand": "Be Quiet!",
+      "provider": "Topachat",
+      "release_date": "01-02-2018",
+      "options": {
+        "TDP": 200,
+        "type": "air"
+      },
+      "compatibility": [
+        "AMD AM2",
+        "AMD AM2+",
+        "AMD AM3",
+        "AMD AM3+",
+        "AMD AM4",
+        "AMD FM1",
+        "AMD FM2",
+        "Intel 1150",
+        "Intel 1151",
+        "Intel 1155",
+        "Intel 1156",
+        "Intel 1200",
+        "Intel 1366",
+        "Intel 2011",
+        "Intel 2011-v3",
+        "Intel 2066"
+      ],
+      "price": 39
+    }
+  ],
+  "motherboard": [
+    {
+      "name": "STRIX B450-F",
+      "long_name": "ASUS ROG STRIX B450-F GAMING",
+      "brand": "ASUS ROG",
+      "provider": "Topachat",
+      "release_date": "18-04-2018",
+      "compatibility": {
+        "socket": "AMD AM4",
+        "ram": "DDR4",
+        "PCIe": "4.0 16x",
+        "M.2": true
+      },
+      "price": 139
+    },
+    {
+      "name": "STRIX B450-F",
+      "long_name": "ASUS ROG STRIX B450-F GAMING",
+      "brand": "ASUS ROG",
+      "provider": "Topachat",
+      "release_date": "18-04-2018",
+      "compatibility": {
+        "socket": "AMD AM4",
+        "ram": "DDR4",
+        "PCIe": "4.0 16x",
+        "M.2": true
+      },
+      "price": 139
+    },
+    {
+      "name": "STRIX B450-F",
+      "long_name": "ASUS ROG STRIX B450-F GAMING",
+      "brand": "ASUS ROG",
+      "provider": "Topachat",
+      "release_date": "18-04-2018",
+      "compatibility": {
+        "socket": "AMD AM4",
+        "ram": "DDR4",
+        "PCIe": "4.0 16x",
+        "M.2": true
+      },
+      "price": 139
+    },
+    {
+      "name": "STRIX B450-F",
+      "long_name": "ASUS ROG STRIX B450-F GAMING",
+      "brand": "ASUS ROG",
+      "provider": "Topachat",
+      "release_date": "18-04-2018",
+      "compatibility": {
+        "socket": "AMD AM4",
+        "ram": "DDR4",
+        "PCIe": "4.0 16x",
+        "M.2": true
+      },
+      "price": 139
+    },
+    {
+      "name": "STRIX B450-F",
+      "long_name": "ASUS ROG STRIX B450-F GAMING",
+      "brand": "ASUS ROG",
+      "provider": "Topachat",
+      "release_date": "18-04-2018",
+      "compatibility": {
+        "socket": "AMD AM4",
+        "ram": "DDR4",
+        "PCIe": "4.0 16x",
+        "M.2": true
+      },
+      "price": 139
+    },
+    {
+      "name": "STRIX B450-F",
+      "long_name": "ASUS ROG STRIX B450-F GAMING",
+      "brand": "ASUS ROG",
+      "provider": "Topachat",
+      "release_date": "18-04-2018",
+      "compatibility": {
+        "socket": "AMD AM4",
+        "ram": "DDR4",
+        "PCIe": "4.0 16x",
+        "M.2": true
+      },
+      "price": 139
+    }
+  ],
+  "ram": [
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    },
+    {
+      "name": "Vengeance RGB Pro 16GB",
+      "long_name": "Corsair Vengeance RGB Pro 16GB (2x8GB) 3600MHz C18 - Noir",
+      "brand": "Corsair",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "MHz": 3600,
+        "ram": "DDR4"
+      },
+      "price": 109
+    }
+  ],
+  "storage": [
+    {
+      "name": "SSD 860 PRO",
+      "long_name": "Samsung SSD 860 PRO 1 To",
+      "brand": "Samsung",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "capacity": "1 To",
+        "type": "SSD"
+      },
+      "price": 300
+    },
+    {
+      "name": "SSD 860 PRO",
+      "long_name": "Samsung SSD 860 PRO 1 To",
+      "brand": "Samsung",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "capacity": "1 To",
+        "type": "SSD"
+      },
+      "price": 300
+    },
+    {
+      "name": "SSD 860 PRO",
+      "long_name": "Samsung SSD 860 PRO 1 To",
+      "brand": "Samsung",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "capacity": "1 To",
+        "type": "SSD"
+      },
+      "price": 300
+    },
+    {
+      "name": "SSD 860 PRO",
+      "long_name": "Samsung SSD 860 PRO 1 To",
+      "brand": "Samsung",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "capacity": "1 To",
+        "type": "SSD"
+      },
+      "price": 300
+    },
+    {
+      "name": "SSD 860 PRO",
+      "long_name": "Samsung SSD 860 PRO 1 To",
+      "brand": "Samsung",
+      "provider": "Topachat",
+      "release_date": "25-12-2018",
+      "options": {
+        "capacity": "1 To",
+        "type": "SSD"
+      },
+      "price": 300
+    }
+  ],
+  "case": [
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    },
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    },
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    },
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    },
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    },
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    },
+    {
+      "name": "View 71",
+      "long_name": "Thermaltake View 71 TG RGB",
+      "brand": "Thermaltake",
+      "provider": "Topachat",
+      "release_date": "25-12-2016",
+      "options": {
+        "size": "Grand Tour",
+        "format": "E-ATX",
+        "weight": 18.9
+      },
+      "price": 199
+    }
+  ]
+}
