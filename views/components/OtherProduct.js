@@ -4,9 +4,8 @@ import { Container } from "native-base"
 import TextRubik from "./TextRubik"
 
 export default class OtherProduct extends Component {
-  render() {
-    console.log("elem", this.props.data)
 
+  render() {
     if (!this.props.data.name) {
       return false
     }
@@ -19,7 +18,7 @@ export default class OtherProduct extends Component {
         <TextRubik style={style.price}>
           {this.props.data.price}€
         </TextRubik>
-        <Pressable style={style.button} onPress={() => this.props.dismissModal()}>
+        <Pressable style={style.button} onPress={() => this.props.addProduct()}>
           <TextRubik style={style.buttonText}>
             AJOUTER
           </TextRubik>

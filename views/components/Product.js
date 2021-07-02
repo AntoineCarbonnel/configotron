@@ -1,15 +1,39 @@
 import React, { Component } from "react"
-import { FlatList, Image, Modal, Pressable, SafeAreaView, ScrollView, TouchableOpacity, View } from "react-native"
+import { FlatList, Image, Modal, Pressable, SafeAreaView, TouchableOpacity, View } from "react-native"
 import styles from "../../assets/style/ProductsListStyle"
 import TextRubik from "./TextRubik"
 import Topachat from "../../data/topachat.json"
 import Ldlc from "../../data/ldlc.json"
 import OtherProduct from "./OtherProduct"
+import AsyncStorage from "@react-native-async-storage/async-storage"
 
 export default class Product extends Component {
 
   state = {
     modalVisible: false,
+    userChoices: {
+      cpu: {},
+      cooling: {},
+      cm: {},
+      ram: {},
+      gpu: {},
+      stockage: {},
+      boitier: {},
+    },
+  }
+
+  addProduct = (product) => {
+    AsyncStorage.getItem("userChoices")
+      .then((value) => this.setState({ userChoices: value }))
+
+    let userChoices = this.state.userChoices
+    userChoices[this.props.type] = product
+    this.setState({ userChoices: userChoices })
+
+    AsyncStorage.setItem("userChoices", JSON.stringify(this.state.userChoices))
+    this.setModalVisible(!this.state.modalVisible)
+
+    this.props.navigation.navigate("Home")
   }
 
   infoProduct = () => {
@@ -18,7 +42,7 @@ export default class Product extends Component {
         <Image resizeMode={"contain"} style={styles.modalImage} source={{ uri: this.props.product.img }} />
         <TextRubik style={styles.modalPrice}>{this.props.product.price}€</TextRubik>
         <TextRubik style={styles.modalAvailable}>actuellement disponible</TextRubik>
-        <Pressable style={styles.modalButton} onPress={() => this.setModalVisible(!this.state.modalVisible)}>
+        <Pressable style={styles.modalButton} onPress={() => this.addProduct(this.props.product)}>
           <TextRubik style={styles.modalButtonText}>
             AJOUTER LE PRODUIT
           </TextRubik>
@@ -62,7 +86,7 @@ export default class Product extends Component {
   }
 
   displayOtherProducts = (otherProduct) => {
-    return <OtherProduct dismissModal={() => this.setModalVisible(!this.state.modalVisible)} data={otherProduct.item} />
+    return <OtherProduct data={otherProduct.item} />
   }
 
   render() {
@@ -99,13 +123,13 @@ export default class Product extends Component {
                   {this.props.product.long_name}
                 </TextRubik>
               </View>
-              <SafeAreaView  style={styles.modalContent}>
-                  <FlatList
-                    ListHeaderComponent={this.infoProduct}
-                    data={this.findSimilarProduct(this.props.product.name)}
-                    renderItem={product => this.displayOtherProducts(product)}
-                    keyExtractor={ product => Topachat[this.props.type].indexOf(product)}/>
-              </SafeAreaView >
+              <SafeAreaView style={styles.modalContent}>
+                <FlatList
+                  ListHeaderComponent={this.infoProduct}
+                  data={this.findSimilarProduct(this.props.product.name)}
+                  renderItem={product => this.displayOtherProducts(product)}
+                  keyExtractor={product => Topachat[this.props.type].indexOf(product)} />
+              </SafeAreaView>
             </View>
           </View>
         </Modal>

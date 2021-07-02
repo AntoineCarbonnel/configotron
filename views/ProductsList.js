@@ -9,7 +9,7 @@ import Product from "./components/Product"
 export class ProductsList extends Component {
 
   productsList(product) {
-    return <Product product={product} type={[this.props.route.params.type.short]}>
+    return <Product navigation={this.props.navigation} product={product} type={[this.props.route.params.type.short]}>
       {product.long_name}
     </Product>
   }

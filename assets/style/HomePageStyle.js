@@ -51,6 +51,7 @@ export default StyleSheet.create({
     elevation: 4,
     paddingLeft: 10,
   },
+
   cardAdd: {
     justifyContent: 'center',
     alignItems: 'center',
