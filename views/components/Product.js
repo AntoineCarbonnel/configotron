@@ -24,16 +24,18 @@ export default class Product extends Component {
 
   addProduct = (product) => {
     AsyncStorage.getItem("userChoices")
-      .then((value) => this.setState({ userChoices: value }))
+      .then((value) => {
+        this.setState({ userChoices: JSON.parse(value) })
 
-    let userChoices = this.state.userChoices
-    userChoices[this.props.type] = product
-    this.setState({ userChoices: userChoices })
+        let userChoices = this.state.userChoices
+        userChoices[this.props.type] = product
+        this.setState({ userChoices: userChoices })
+        AsyncStorage.setItem("userChoices", JSON.stringify(this.state.userChoices))
+        this.setModalVisible(!this.state.modalVisible)
 
-    AsyncStorage.setItem("userChoices", JSON.stringify(this.state.userChoices))
-    this.setModalVisible(!this.state.modalVisible)
+        this.props.navigation.navigate("Home")
+      })
 
-    this.props.navigation.navigate("Home")
   }
 
   infoProduct = () => {
@@ -86,7 +88,7 @@ export default class Product extends Component {
   }
 
   displayOtherProducts = (otherProduct) => {
-    return <OtherProduct data={otherProduct.item} />
+    return <OtherProduct data={otherProduct.item} addProduct={(data) => this.addProduct(data)} />
   }
 
   render() {

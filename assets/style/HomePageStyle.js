@@ -33,11 +33,13 @@ export default StyleSheet.create({
     fontFamily: "Rubik-SemiBold",
   },
   container: {
-    height: '70%',
+    paddingHorizontal: 5,
+    paddingBottom: 20,
     justifyContent: 'space-around',
   },
   card: {
     height: 60,
+    marginTop: 5,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",

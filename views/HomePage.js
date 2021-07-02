@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Container, Header, Title } from "native-base"
-import { Image, View } from "react-native"
+import { Image, ScrollView, View } from "react-native"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import styles from "../assets/style/HomePageStyle"
 import TextRubik from "./components/TextRubik"
@@ -31,7 +31,6 @@ export class HomePage extends Component {
   componentDidUpdate(prevProps: Readonly<P>, prevState: Readonly<S>, snapshot: SS) {
     AsyncStorage.getItem("userChoices")
       .then((value) => this.setState({ userChoices: JSON.parse(value) }))
-    console.log("elem")
   }
 
   render() {
@@ -61,10 +60,8 @@ export class HomePage extends Component {
     }
     const boitier = {
       name: "Boîtier",
-      short: "case",
+      short: "boitier",
     }
-
-    console.log(this.state.userChoices)
 
     return (
       <Container>
@@ -78,7 +75,7 @@ export class HomePage extends Component {
           <TextRubik style={styles.bodyTitle}>
             COMPOSANTS
           </TextRubik>
-          <View style={styles.container}>
+          <ScrollView contentContainerStyle={styles.container}>
             <Item navigation={this.props.navigation} img={require("../assets/img/cpu.png")} type={cpu}>
               Processeur
             </Item>
@@ -134,7 +131,7 @@ export class HomePage extends Component {
               <ProductLight navigation={this.props.navigation} product={this.state.userChoices.boitier} type={boitier.short}>
                 {this.state.userChoices.boitier.long_name}
               </ProductLight> : false}
-          </View>
+          </ScrollView>
         </View>
       </Container>
     )

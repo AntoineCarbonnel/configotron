@@ -18,7 +18,7 @@ export default class OtherProduct extends Component {
         <TextRubik style={style.price}>
           {this.props.data.price}€
         </TextRubik>
-        <Pressable style={style.button} onPress={() => this.props.addProduct()}>
+        <Pressable style={style.button} onPress={() => this.props.addProduct(this.props.data)}>
           <TextRubik style={style.buttonText}>
             AJOUTER
           </TextRubik>
