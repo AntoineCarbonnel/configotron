@@ -4,8 +4,14 @@ import { Image, View } from "react-native"
 import styles from "../assets/style/HomePageStyle"
 import TextRubik from "./components/TextRubik"
 import Item from "./components/Item"
+import SplashScreen from "react-native-splash-screen"
 
 export class HomePage extends Component {
+
+  componentDidMount() {
+    SplashScreen.hide();
+  }
+
   render() {
     const cpu = {
       name: "processeur",
@@ -52,6 +58,7 @@ export class HomePage extends Component {
             <Item navigation={this.props.navigation} img={require("../assets/img/cpu.png")} type={cpu}>
               Processeur
             </Item>
+
             <Item navigation={this.props.navigation} img={require("../assets/img/ventirad.png")} type={cooling}>
               Refroidissement
             </Item>

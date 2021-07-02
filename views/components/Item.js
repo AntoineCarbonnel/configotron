@@ -8,8 +8,8 @@ export default class Item extends Component {
   render() {
     return (
       <View style={styles.card}>
-        <Image style={styles.cardPic} source={this.props.img} />
-        <TextRubik style={styles.cardText}>
+        <Image source={this.props.img} />
+        <TextRubik>
           {this.props.children}
         </TextRubik>
         <TouchableOpacity onPress={() => this.props.navigation.navigate("ProductsList", { type: this.props.type })}>

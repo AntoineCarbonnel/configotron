@@ -9,11 +9,9 @@ import Product from "./components/Product"
 export class ProductsList extends Component {
 
   productsList(product) {
-    return (
-      <Product img={product.img} price={product.price}>
-        {product.name}
-      </Product>
-    )
+    return <Product product={product} type={[this.props.route.params.type.short]}>
+      {product.long_name}
+    </Product>
   }
 
   render() {
@@ -30,7 +28,8 @@ export class ProductsList extends Component {
             {this.props.route.params.type.name.toUpperCase()}
           </TextRubik>
           <FlatList data={Topachat[this.props.route.params.type.short]}
-                    renderItem={product => this.productsList(product.item)} keyExtractor={ product => Topachat[this.props.route.params.type.short].indexOf(product)}>
+                    renderItem={product => this.productsList(product.item)}
+                    keyExtractor={ product => Topachat[this.props.route.params.type.short].indexOf(product)}>
           </FlatList>
         </View>
       </Container>
